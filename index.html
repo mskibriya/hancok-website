@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hancok</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700&family=Oswald:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="./src/output.css" rel="stylesheet">
+</head>
+<body style="margin: 0; padding: 0; background-color: #0B090C; color: #FFFFFF; font-family: 'Oswald', sans-serif; overflow-x: hidden;">
+
+  <!-- HEADER PART START -->
+  <header style="width: 100%; background-color: #0B090C; padding: 20px 0; position: relative; z-index: 30;">
+    <div style="max-width: 1320px; margin: 0 auto; padding: 0 32px; display: flex; align-items: center; justify-content: space-between; gap: 16px;">
+
+      <!-- Logo -->
+      <a href="#" style="display: inline-flex; align-items: center; text-decoration: none; flex-shrink: 0;">
+        <img src="./asset/hancok-logo.png" alt="Hancok Logo" style="height: 32px; width: auto; object-fit: contain;">
+      </a>
+
+      <!-- Nav Links -->
+      <nav style="display: flex; align-items: center; gap: 28px; font-size: 16px; font-weight: 400;">
+        <a href="#home" style="color: #FFFFFF; text-decoration: none;">Home</a>
+        <a href="#about" style="color: #FFFFFF; text-decoration: none;">About us</a>
+        <a href="#tournament" style="color: #FFFFFF; text-decoration: none;">Tornament</a>
+        <a href="#store" style="color: #FFFFFF; text-decoration: none;">Store</a>
+        <a href="#team" style="color: #FFFFFF; text-decoration: none;">Team</a>
+        <a href="#faq" style="color: #FFFFFF; text-decoration: none;">FAQ</a>
+        <a href="#contact" style="color: #FFFFFF; text-decoration: none;">Contact Us</a>
+      </nav>
+
+      <!-- Right Utility Actions -->
+      <div style="display: flex; align-items: center; gap: 22px; font-size: 15px; color: #FFFFFF; flex-shrink: 0;">
+        <button type="button" aria-label="Language" style="background: none; border: none; color: #FFFFFF; cursor: pointer; padding: 0; display: inline-flex; align-items: center;">
+          <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+            <circle cx="12" cy="12" r="9"></circle>
+            <path d="M3.6 9h16.8M3.6 15h16.8"></path>
+            <path d="M12 3a14.5 14.5 0 0 0 0 18 14.5 14.5 0 0 0 0-18z"></path>
+          </svg>
+        </button>
+
+        <a href="#signin" style="display: inline-flex; align-items: center; gap: 8px; color: #FFFFFF; text-decoration: none;">
+          <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"></path>
+            <polyline points="10 17 15 12 10 7"></polyline>
+            <line x1="15" y1="12" x2="3" y2="12"></line>
+          </svg>
+          <span>Sign In</span>
+        </a>
+
+        <button type="button" aria-label="Search" style="background: none; border: none; color: #FFFFFF; cursor: pointer; padding: 0; display: inline-flex; align-items: center;">
+          <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <circle cx="11" cy="11" r="7"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+        </button>
+      </div>
+
+    </div>
+  </header>
+  <!-- HEADER PART END -->
+
+  <!-- BANNER PART START -->
+  <section
+    id="home"
+    style="position: relative; width: 100%; min-height: 760px; background-color: #0B090C; background-image: url('./asset/main-banner-image.png'); background-size: cover; background-position: center; background-repeat: no-repeat; display: flex; flex-direction: column; justify-content: space-between;"
+  >
+    <!-- Dark Gradient Overlay -->
+    <div style="position: absolute; inset: 0; background: linear-gradient(90deg, rgba(11,9,12,0.78) 0%, rgba(11,9,12,0.35) 55%, rgba(11,9,12,0.1) 100%); pointer-events: none;"></div>
+
+    <!-- Banner Text & Button -->
+    <div style="position: relative; z-index: 10; max-width: 1320px; width: 100%; margin: 0 auto; padding: 130px 32px 0 32px; box-sizing: border-box;">
+      <div style="max-width: 720px;">
+
+        <p style="color: #FFFFFF; font-size: 27px; font-weight: 400; letter-spacing: 0.1em; text-transform: uppercase; margin: 0 0 8px 0; line-height: 1.2;">
+          LIFE TIME
+        </p>
+
+        <div style="display: flex; align-items: center; gap: 20px; flex-wrap: wrap;">
+          <h1 style="color: #FFFFFF; font-size: 60px; font-weight: 700; text-transform: uppercase; margin: 0; line-height: 1.1;">
+            GAMING EXPERIENCE
+          </h1>
+          <span style="display: inline-block; width: 92px; height: 3px; background-color: #FFFFFF; margin-top: 10px;"></span>
+        </div>
+
+        <div style="margin-top: 64px;">
+          <a
+            href="#about"
+            style="display: inline-flex; align-items: center; justify-content: center; gap: 10px; width: 128px; height: 50px; background-color: #FFFFFF; color: #121212; text-decoration: none; font-size: 16px; font-weight: 400; transition: all 0.3s ease;"
+            onmouseover="this.style.backgroundColor='#FF4655'; this.style.color='#FFFFFF';"
+            onmouseout="this.style.backgroundColor='#FFFFFF'; this.style.color='#121212';"
+          >
+            <span>View More</span>
+            <img src="./asset/right-sign.png" alt="Arrow" style="width: 12px; height: 12px; object-fit: contain;">
+          </a>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Social Icons -->
+    <div style="position: relative; z-index: 10; max-width: 1320px; width: 100%; margin: 0 auto; padding: 48px 32px 48px 32px; box-sizing: border-box;">
+      <div style="display: flex; align-items: center; gap: 20px;">
+        <a href="#" aria-label="Facebook" style="display: inline-flex; align-items: center;">
+          <img src="./asset/facebook icon.png" alt="Facebook" style="width: 34px; height: 34px; object-fit: contain;">
+        </a>
+        <a href="#" aria-label="LinkedIn" style="display: inline-flex; align-items: center;">
+          <img src="./asset/linkedin icon.png" alt="LinkedIn" style="width: 34px; height: 34px; object-fit: contain;">
+        </a>
+        <a href="#" aria-label="Twitter" style="display: inline-flex; align-items: center;">
+          <img src="./asset/twitter icon.png" alt="Twitter" style="width: 34px; height: 34px; object-fit: contain;">
+        </a>
+        <a href="#" aria-label="Instagram" style="display: inline-flex; align-items: center;">
+          <img src="./asset/instagram icon.png" alt="Instagram" style="width: 34px; height: 34px; object-fit: contain;">
+        </a>
+      </div>
+    </div>
+  </section>
+  <!-- BANNER PART END -->
+
+  <!-- ABOUT PART START -->
+  <section id="about" style="width: 100%; background-color: #121212; padding: 110px 0; color: #FFFFFF; font-family: 'Oswald', sans-serif;">
+    <div style="max-width: 1320px; margin: 0 auto; padding: 0 32px; box-sizing: border-box;">
+
+<!-- Section Heading + Red Line -->
+      <div style="margin-bottom: 60px;">
+        <h2 style="font-size: 40px; font-weight: 600; line-height: 1.2; text-transform: uppercase; margin: 0; color: #FFFFFF;">
+          ABOUT THE BIGGEST HANCOK
+        </h2>
+        <div style="display: flex; align-items: flex-end; gap: 18px; margin-top: 4px;">
+          <h2 style="font-size: 40px; font-weight: 600; line-height: 1.15; text-transform: uppercase; margin: 0; color: #FFFFFF;">
+            COMMUNITY
+          </h2>
+          <span style="display: inline-block; width: 92px; height: 2px; background-color: #FF4655; margin-bottom: 6px;"></span>
+        </div>
+      </div>
+
+      <!-- Middle 2-Column Content -->
+      <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 64px;">
+
+        <!-- Left Image with Red L-Accent & Bottom-Right Curve -->
+        <div style="position: relative; flex: 1 1 500px; max-width: 620px;">
+
+          <!-- Red Accent Top-Left -->
+          <div style="position: absolute; top: -7px; left: -7px; width: 170px; height: 140px; background-color: #FF4655; z-index: 0;"></div>
+          <img
+            src="./asset/about-image.png"
+            alt="About Hancok Community"
+            style="position: relative; z-index: 1; width: 100%; height: 420px; object-fit: cover; border-bottom-right-radius: 56px; display: block;"
+          >
+        </div>
+
+        <!-- Right Text Content -->
+        <div style="flex: 1 1 460px; max-width: 580px;">
+          <h3 style="font-size: 28px; font-weight: 600; text-transform: uppercase; margin: 0 0 18px 0; color: #FFFFFF;">
+            MOST POPULAR GAMING PLATFORM.
+          </h3>
+
+          <ul style="list-style: none; padding: 0; margin: 0 0 24px 0; display: flex; flex-direction: column; gap: 10px; font-family: 'Barlow Condensed', sans-serif; font-size: 20px; color: #E5E5E5;">
+            <li style="display: flex; align-items: center; gap: 10px;">
+              <span style="color: #FF4655; font-weight: 700;">&#10003;</span>
+              <span>World Biggest Community &amp; Gaming Server</span>
+            </li>
+            <li style="display: flex; align-items: center; gap: 10px;">
+              <span style="color: #FF4655; font-weight: 700;">&#10003;</span>
+              <span>Friendly Clan &amp; Mates</span>
+            </li>
+            <li style="display: flex; align-items: center; gap: 10px;">
+              <span style="color: #FF4655; font-weight: 700;">&#10003;</span>
+              <span>We Provide Gaming Accessories</span>
+            </li>
+            <li style="display: flex; align-items: center; gap: 10px;">
+              <span style="color: #FF4655; font-weight: 700;">&#10003;</span>
+              <span>Largest Online Gaming Community &amp; Shop</span>
+            </li>
+            <li style="display: flex; align-items: center; gap: 10px;">
+              <span style="color: #FF4655; font-weight: 700;">&#10003;</span>
+              <span>Hancok reaches more than 150 million monthly users</span>
+            </li>
+            <li style="display: flex; align-items: center; gap: 10px;">
+              <span style="color: #FF4655; font-weight: 700;">&#10003;</span>
+              <span>We are leading global media brand for games</span>
+            </li>
+          </ul>
+
+          <p style="font-family: 'Barlow Condensed', sans-serif; font-size: 18px; line-height: 1.5; color: #D4D4D4; margin: 0 0 28px 0;">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex illo sed odio temporibus magni quia eveniet odit placeat repellat quod ipsum modi necessitatibus, dolorum officia!
+          </p>
+
+          <a
+            href="#popular"
+            style="display: inline-flex; align-items: center; justify-content: center; gap: 10px; width: 128px; height: 50px; background-color: #212121; color: #FFFFFF; text-decoration: none; font-size: 16px; font-weight: 400; transition: all 0.3s ease;"
+            onmouseover="this.style.backgroundColor='#FF4655'; this.style.color='#FFFFFF';"
+            onmouseout="this.style.backgroundColor='#212121'; this.style.color='#FFFFFF';"
+          >
+            <span>View More</span>
+            <img src="./asset/right-sign.png" alt="Arrow" style="width: 12px; height: 12px; object-fit: contain; filter: brightness(0) invert(1);">
+          </a>
+        </div>
+
+      </div>
+
+      <!-- Bottom 4 Stats Cards -->
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 24px; margin-top: 76px;">
+
+        <!-- Card 1 -->
+        <div style="background-color: #212121; padding: 34px 20px; text-align: center; border-top-right-radius: 50px; border-bottom-left-radius: 50px;">
+          <div style="display: inline-flex; align-items: baseline; justify-content: center; gap: 6px; margin-bottom: 8px;">
+            <span style="font-family: 'Barlow Condensed', sans-serif; font-size: 56px; font-weight: 600; line-height: 1; color: #FFFFFF;">112k</span>
+            <span style="width: 10px; height: 10px; border-radius: 9999px; background-color: #FF4655; display: inline-block;"></span>
+          </div>
+          <p style="margin: 0; font-size: 18px; font-weight: 300; color: #E5E5E5;">Community Earning</p>
+        </div>
+
+        <!-- Card 2 -->
+        <div style="background-color: #212121; padding: 34px 20px; text-align: center; border-top-right-radius: 50px; border-bottom-left-radius: 50px;">
+          <div style="display: inline-flex; align-items: baseline; justify-content: center; gap: 6px; margin-bottom: 8px;">
+            <span style="font-family: 'Barlow Condensed', sans-serif; font-size: 56px; font-weight: 600; line-height: 1; color: #FFFFFF;">12M</span>
+            <span style="width: 10px; height: 10px; border-radius: 9999px; background-color: #FF4655; display: inline-block;"></span>
+          </div>
+          <p style="margin: 0; font-size: 18px; font-weight: 300; color: #E5E5E5;">Total Member</p>
+        </div>
+
+        <!-- Card 3 -->
+        <div style="background-color: #212121; padding: 34px 20px; text-align: center; border-top-right-radius: 50px; border-bottom-left-radius: 50px;">
+          <div style="display: inline-flex; align-items: baseline; justify-content: center; gap: 6px; margin-bottom: 8px;">
+            <span style="font-family: 'Barlow Condensed', sans-serif; font-size: 56px; font-weight: 600; line-height: 1; color: #FFFFFF;">100k</span>
+            <span style="width: 10px; height: 10px; border-radius: 9999px; background-color: #FF4655; display: inline-block;"></span>
+          </div>
+          <p style="margin: 0; font-size: 18px; font-weight: 300; color: #E5E5E5;">Streams Complete</p>
+        </div>
+
+        <!-- Card 4 -->
+        <div style="background-color: #212121; padding: 34px 20px; text-align: center; border-top-right-radius: 50px; border-bottom-left-radius: 50px;">
+          <div style="display: inline-flex; align-items: baseline; justify-content: center; gap: 6px; margin-bottom: 8px;">
+            <span style="font-family: 'Barlow Condensed', sans-serif; font-size: 56px; font-weight: 600; line-height: 1; color: #FFFFFF;">844</span>
+            <span style="width: 10px; height: 10px; border-radius: 9999px; background-color: #FF4655; display: inline-block;"></span>
+          </div>
+          <p style="margin: 0; font-size: 18px; font-weight: 300; color: #E5E5E5;">Total Sponsers</p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+  <!-- ABOUT PART END -->
+
+</body>
+</html>
